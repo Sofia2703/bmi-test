@@ -1,0 +1,79 @@
+.button {
+  // border-radius: 12px;
+  background-color: white;
+  border-color: #32c5d2;
+  color: #32c5d2;
+  display: inline-block;
+  cursor: pointer;
+  
+}
+
+.btn:focus {
+  color: white;
+  background: #32c5d2;
+  border-color: #32c5d2;
+}
+
+.mar {
+ margin-bottom: 1em;
+}
+
+.showbtn {
+  font-size: 40px!important;
+  position: absolute;
+  z-index: 15;
+  top: 20%;
+  left: 13%;
+}
+
+.showbox {
+  font-size: 40px!important;
+  position: absolute;
+  z-index: 15;
+  top: 20%;
+  left: 20%;
+}
+
+.outPopUp {
+  font-size: 40px!important;
+  position: absolute;
+  z-index: 15;
+  top: 20%;
+  right: 10%;
+}
+
+.outPopUp2 {
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  right: 15%;
+}
+.outPopUp3 {
+  position: absolute;
+  z-index: 15;
+  top: 60%;
+  right: 12%;
+}
+
+.form-control {
+  outline: 0 !important;
+}
+
+// -------------------------------
+// css for result box
+.example-container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}
