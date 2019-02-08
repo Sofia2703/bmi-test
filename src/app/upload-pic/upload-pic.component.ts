@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./upload-pic.component.scss']
 })
 export class UploadPicComponent implements OnInit {
+  url: string = 'http://placehold.it/180';
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  onFileSelected(event) {
+    console.log(event); //----------1
+  }
+
+  
 
 }

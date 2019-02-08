@@ -3,20 +3,18 @@ import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material';
 import {HttpClientModule} from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule ,routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
-import { UploadPicComponent } from './upload-pic/upload-pic.component';
-import { ForecastComponent } from './forecast/forecast.component';
+// import { MainComponent } from './main/main.component';
+// import { UploadPicComponent } from './upload-pic/upload-pic.component';
+// import { ForecastComponent } from './forecast/forecast.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {DemoMaterialModule} from './demo-material';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
-    UploadPicComponent,
-    ForecastComponent
+    routingComponents
   ],
   imports: [
     BrowserModule,
@@ -26,9 +24,10 @@ import {DemoMaterialModule} from './demo-material';
     HttpClientModule,
     MatNativeDateModule,
     ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
 }
