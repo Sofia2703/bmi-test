@@ -9,6 +9,7 @@ export class UploadPicComponent implements OnInit {
   imageUrl: string = 'http://placehold.it/800';
   // imageUrl : string = "/assets/img/man-icon.png"
   fileToUpload : File = null;
+  fileToUpload2 : File = null;
 
   constructor() { }
 
@@ -16,7 +17,7 @@ export class UploadPicComponent implements OnInit {
   }
 
   onFileSelected(event) {
-    console.log(event); //----------1
+    console.log(event);
   }
 
   handleFileInput(file : FileList) {
