@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HttpClientJsonpModule} from '@angular/common/http';
 import { AppRoutingModule ,routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { MainComponent } from './main/main.component';
@@ -26,7 +26,8 @@ import { AgGridModule } from 'ag-grid-angular';
     MatNativeDateModule,
     ReactiveFormsModule,
     FormsModule,
-    AgGridModule.withComponents(null)
+    AgGridModule.withComponents(null),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
