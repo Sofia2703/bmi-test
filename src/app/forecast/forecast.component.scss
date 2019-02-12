@@ -53,3 +53,20 @@ $border-radius: 1rem;
 		}
   }
 }
+
+.bg {
+	/* The image used */
+	background-image: url('../img/web-desing.jpg');
+
+	/* Full height */
+	height: 100%; 
+
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	z-index: -10;
+}
