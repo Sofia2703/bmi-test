@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 // import { ForecastComponent } from './forecast/forecast.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {DemoMaterialModule} from './demo-material';
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {DemoMaterialModule} from './demo-material';
     HttpClientModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AgGridModule.withComponents(null)
   ],
   providers: [],
   bootstrap: [AppComponent]

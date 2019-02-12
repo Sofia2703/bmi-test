@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForecastComponent implements OnInit {
   // showFiller = false;
+  imageUrl: string = 'http://placehold.it/800';
   constructor() { }
 
   ngOnInit() {

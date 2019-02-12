@@ -13,22 +13,15 @@
     background: #32c5d2;
     border-color: #32c5d2;
   }
+  
+  .top {
+    margin-top: 35rem;
+  }
 
-  .outPopUp {
-    font-size: 40px!important;
-    position: absolute;
-    z-index: 15;
-    top: 40%;
-    left: 0%;
+  .top2 {
+    margin-top: 2rem;
   }
-  
-  .outPopUp2 {
-    position: absolute;
-    z-index: 15;
-    top: 50%;
-    left: 0%;
-  }
-  
+
   .form-control {
     outline: 0 !important;
   }
