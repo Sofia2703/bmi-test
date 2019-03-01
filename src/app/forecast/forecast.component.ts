@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { UploadPicComponent } from '../upload-pic/upload-pic.component';
 
 @Component({
   selector: 'app-forecast',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForecastComponent implements OnInit {
   // showFiller = false;
+  
   imageUrl: string = 'http://placehold.it/800';
-  constructor() { }
+  constructor(
+    // private uploadpic :UploadPicComponent
+  ) { }
 
   ngOnInit() {
   }
