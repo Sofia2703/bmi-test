@@ -1,13 +1,23 @@
 .font-fam {
     font-family: TH SarabunPSK;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
   }
 
   .font-fam2 {
     font-family: TH SarabunPSK;
-    font-size: 35px;
+    font-size: 26px;
     font-weight: bold;
     color: white;
+    text-align: center;
+  }
+
+  .active{
+    color: chocolate;
+  }
+
+  li a:hover:not(.active) {
+    background-color: none;
+    color: blueviolet;
   }
