@@ -1,39 +1,4 @@
-.button {
-    // border-radius: 12px;
-    background-color: white;
-    border-color: #32c5d2;
-    color: #32c5d2;
-    display: inline-block;
-    cursor: pointer;
-    
-  }
-  
-  .btn:focus {
-    color: white;
-    background: #32c5d2;
-    border-color: #32c5d2;
-  }
-
-  .outPopUp {
-    font-size: 40px!important;
-    position: absolute;
-    z-index: 15;
-    top: 25%;
-    left: 0%;
-  }
-  
-  .outPopUp2 {
-    position: absolute;
-    z-index: 15;
-    top: 65%;
-    left: 0%;
-  }
-  
-  .form-control {
-    outline: 0 !important;
-  }
-  
-  // -------------- upload css ------------
+// -------------- upload css ------------
 
   .btn-file {
     position: relative;
@@ -60,26 +25,47 @@
 }
 
 .top {
-  margin-top: 15rem;
+  margin-top: 12rem;
 }
 
-.top2 {
-  margin-top: 2rem;
+.font-fam {
+  font-family: TH SarabunPSK;
+  font-size: 120px;
+  font-weight: bold;
+  color: white;
 }
 
-.bg {
-   /* The image used */
-  //  background-image: url('../img/web-desing-2.jpg');
+.font-fam2 {
+  font-family: TH SarabunPSK;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+}
 
-   /* Full height */
-   height: 100%; 
- 
-   /* Center and scale the image nicely */
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   top: 0;
-   bottom: 0;
-   height: 100vh;
-   z-index: -10;
+
+
+// -------------- btn -----------
+.btn-default {
+  font-family: TH SarabunPSK;
+  font-size: 30px;
+  // color: rgba(108, 88, 179, 0.75);
+  color: white;
+  letter-spacing: 1px;
+  line-height: 15px;
+  // border: 2px solid rgba(108, 89, 179, 0.75);
+  border: 2px solid white;
+  border-radius: 40px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-default:hover {
+  color: #FFF;
+  background:#32c5d2;
+  border: 2px solid #32c5d2;
+}
+
+// ----------- img border -------------
+.imgBorder {
+  border: 5px solid white;
 }

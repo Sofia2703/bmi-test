@@ -1,23 +1,25 @@
-<div class="container-fluid bg">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-1 col-sm-1 text-left top">
-
-    </div>
-    <div class="col-lg-7 col-md-7 col-sm-7 text-left top">
+    <div class="col-lg-8 col-md-8 col-sm-8 text-center top">
       <div class="d-flex flex-row mt-2">
-        <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
-          <li class="nav-item">
-            <a href="#lorem" class="nav-link active" data-toggle="tab" role="tab" aria-controls="lorem">ผลการทำนาย BMI</a>
-          </li>
-          <li class="nav-item">
-            <a href="#ipsum" class="nav-link" data-toggle="tab" role="tab" aria-controls="ipsum">คำแนะนำการออกกำลังกาย</a>
-          </li>
-          <li class="nav-item">
-            <a href="#dolor" class="nav-link" data-toggle="tab" role="tab" aria-controls="dolor">คำแนะนำการรับประทานอาหาร</a>
-          </li>
-          
-        </ul>
-        <div class="tab-content">
+        <div class="font-fam">
+          <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
+            <li class="nav-item">
+              <a href="#lorem" class="nav-link active" data-toggle="tab" role="tab" aria-controls="lorem">ผลการทำนาย
+                BMI</a>
+            </li>
+            <li class="nav-item">
+              <a href="#ipsum" class="nav-link" data-toggle="tab" role="tab"
+                aria-controls="ipsum">คำแนะนำการออกกำลังกาย</a>
+            </li>
+            <li class="nav-item">
+              <a href="#dolor" class="nav-link" data-toggle="tab" role="tab"
+                aria-controls="dolor">คำแนะนำการรับประทานอาหาร</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="tab-content text-left font-fam2">
           <div class="tab-pane fade show contentData active" id="lorem" role="tabpanel">
             <h1>Lorem</h1>
 
@@ -83,13 +85,13 @@
               amet
               nisi eu, rutrum fermentum odio.</p>
           </div>
-          
+
         </div>
       </div>
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 text-center top">
-      <img [src]="imageUrl" style=" width: 20rem; height: 20rem;">
-      <h1>Hello world</h1>
+      <img [src]="imageUrl" class="imgBorder" style="width: 35rem; height: 35rem; margin-top: 8rem;">
+      <h1 style="font-size: 60px; font-weight: bolder; color: white;">Hello world</h1>
       <!-- <img [src]="imageUrl" style=" width: 5rem; height: 5rem;">&nbsp;&nbsp;
       <img [src]="imageUrl" style=" width: 5rem; height: 5rem;">&nbsp;&nbsp;
       <img [src]="imageUrl" style=" width: 5rem; height: 5rem;"> -->
