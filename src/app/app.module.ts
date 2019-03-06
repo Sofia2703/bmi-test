@@ -11,11 +11,17 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {DemoMaterialModule} from './demo-material';
 import { AgGridModule } from 'ag-grid-angular';
+import { WhatBmiComponent } from './what-bmi/what-bmi.component';
+import { HealthyComponent } from './healthy/healthy.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    WhatBmiComponent,
+    HealthyComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
