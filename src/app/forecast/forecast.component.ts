@@ -14,6 +14,8 @@ export class ForecastComponent implements OnInit {
     // private uploadpic :UploadPicComponent
   ) { }
 
+  
+
   ngOnInit() {
   }
 

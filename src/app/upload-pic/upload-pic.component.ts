@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-upload-pic',
   templateUrl: './upload-pic.component.html',
@@ -8,7 +8,6 @@ export class UploadPicComponent implements OnInit {
   imageUrl: string = 'http://placehold.it/800';
   // imageUrl : string = "/assets/img/man-icon.png"
   fileToUpload : File = null;
-
 
   constructor() { }
 
