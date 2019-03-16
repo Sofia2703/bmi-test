@@ -1,4 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { DataService } from '../data.service';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-what-bmi',
@@ -6,12 +8,15 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./what-bmi.component.scss']
 })
 export class WhatBmiComponent implements OnInit {
+  message:string;
 
+  a: string = 'text send';
 
-
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.currentMessage.subscribe(message => this.message = message)
   }
+
 
 }
