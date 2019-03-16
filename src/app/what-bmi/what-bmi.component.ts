@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-what-bmi',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./what-bmi.component.scss']
 })
 export class WhatBmiComponent implements OnInit {
+
+
 
   constructor() { }
 
