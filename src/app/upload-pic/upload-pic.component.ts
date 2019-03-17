@@ -1,8 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { UploadService } from './upload.service';
-import { BehaviorSubject,Observable, Subject } from 'rxjs';
-
 @Component({
   selector: 'app-upload-pic',
   templateUrl: './upload-pic.component.html',
@@ -14,11 +11,12 @@ export class UploadPicComponent implements OnInit {
   imageSend:string;
   fileToUpload : File = null;
 
-  constructor(private http:HttpClient
-    ,private upload:UploadService) { }
+  message:string;
+
+  constructor(private data: UploadService) { }
 
   ngOnInit() {
-    
+    this.data.currentMessage.subscribe(message => this.message = message)
   }
 
   handleFileInput(file : FileList) {
@@ -29,8 +27,13 @@ export class UploadPicComponent implements OnInit {
     reader.onload = (event:any) => {
       this.imageUrl = event.target.result;
       this.imageSend = event.target.result;
-      console.log('gi',this.imageUrl);
+      console.log('gi',this.imageSend);
     }
     reader.readAsDataURL(this.fileToUpload);
   }
+
+  newMessage() {
+    this.data.changeMessage(this.imageSend);
+  }
+  
 }

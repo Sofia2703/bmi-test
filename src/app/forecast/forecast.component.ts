@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { UploadService } from '../upload-pic/upload.service';
-// import { UploadPicComponent } from '../upload-pic/upload-pic.component';
 
 @Component({
   selector: 'app-forecast',
@@ -10,13 +9,15 @@ import { UploadService } from '../upload-pic/upload.service';
 export class ForecastComponent implements OnInit {
   // showFiller = false;
   imageUrl: string = 'http://placehold.it/800';
-  constructor(
-    private upload: UploadService
-    
-  ) { }
+  imageSend: string;
+
+  constructor(private data: UploadService) { }
 
   ngOnInit() {
-    
+    this.data.currentMessage.subscribe(imageSend => this.imageSend = imageSend)
   }
+
+
+
 
 }
