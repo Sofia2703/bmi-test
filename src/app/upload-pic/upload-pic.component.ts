@@ -1,4 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { UploadService } from './upload.service';
+import { BehaviorSubject,Observable, Subject } from 'rxjs';
+
 @Component({
   selector: 'app-upload-pic',
   templateUrl: './upload-pic.component.html',
@@ -7,27 +11,26 @@ import { Component, OnInit, Input } from '@angular/core';
 export class UploadPicComponent implements OnInit {
   imageUrl: string = 'http://placehold.it/800';
   // imageUrl : string = "/assets/img/man-icon.png"
+  imageSend:string;
   fileToUpload : File = null;
 
-  constructor() { }
+  constructor(private http:HttpClient
+    ,private upload:UploadService) { }
 
   ngOnInit() {
-  }
-
-  onFileSelected(event) {
-    console.log(event);
+    
   }
 
   handleFileInput(file : FileList) {
-    console.log('gi',file.item(0));
+    
     this.fileToUpload = file.item(0);
-    // console.log('gi2',file.item(0));
     //Show img Preview
     var reader = new FileReader();
     reader.onload = (event:any) => {
       this.imageUrl = event.target.result;
+      this.imageSend = event.target.result;
+      console.log('gi',this.imageUrl);
     }
     reader.readAsDataURL(this.fileToUpload);
   }
-
 }

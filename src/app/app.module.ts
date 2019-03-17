@@ -15,6 +15,7 @@ import { WhatBmiComponent } from './what-bmi/what-bmi.component';
 import { HealthyComponent } from './healthy/healthy.component';
 import { ContactComponent } from './contact/contact.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
