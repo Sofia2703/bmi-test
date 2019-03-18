@@ -3,23 +3,21 @@
     <!-- start -->
     <div class="col-lg-12">
       <h1 class="text-center">test
-          <button
-          *ngIf="!buttonDisabled"
-          (click)="buttonDisabled = true">
+        <button *ngIf="!buttonDisabled" (click)="buttonDisabled = true">
           Disable Button
-          </button>
-           
-          <!-- สร้างสองปุ่มไว้ -->
-           
-          <!-- the target button -->
-          <button
-          [disabled]="buttonDisabled"
-          (click)="count = count + 1">
+        </button>
+
+        <!-- enable the button -->
+        <button *ngIf="buttonDisabled" (click)="buttonDisabled = false">
+          Enable Button
+        </button>
+
+        <!-- the target button -->
+        <button [disabled]="buttonDisabled" (click)="count = count + 1">
           I've been clicked {{count}} times.
-          </button>
-        
+        </button>
+
       </h1>
-      
 
       <hr>
     </div>
