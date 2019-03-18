@@ -10,8 +10,10 @@ export class UploadPicComponent implements OnInit {
   // imageUrl : string = "/assets/img/man-icon.png"
   imageSend:string;
   fileToUpload : File = null;
-
   message:string;
+
+  count: number = 0;
+  buttonDisabled: boolean = false;
 
   constructor(private data: UploadService) { }
 
@@ -27,7 +29,9 @@ export class UploadPicComponent implements OnInit {
     reader.onload = (event:any) => {
       this.imageUrl = event.target.result;
       this.imageSend = event.target.result;
+     
       console.log('gi',this.imageSend);
+      console.log('btn',this.buttonDisabled);
     }
     reader.readAsDataURL(this.fileToUpload);
   }
