@@ -1,40 +1,32 @@
 <div class="container-fluid">
   <div class="row">
-    <!-- colum test -->
-    <div class="col-lg-12">
-      <h1 class="text-center">
-        <img [src]="imageUrl" class="imgBorder" style=" width: 35rem; height: 35rem;">
-        <button (click)="newMessage()" [routerLink]="['/forecast']">New Message</button>
-      </h1>
-      
-      <hr>
-    </div>
+    <!-- test -->
+   
     <!-- end -->
-
-
     <div class="col-lg-1">
 
     </div>
     <div class="col-lg-3 col-md-3 col-sm-3 text-center top">
-      <img [src]="imageUrl" class="imgBorder" style=" width: 35rem; height: 35rem;">
-      <!-- <input type="file" #Image accept="image/*" (change)="handleFileInput($event.target.files)"> -->
-      <br>
-      <br><br>
-      <input type="file" #Image accept="image/*" style="display: none;" (change)="handleFileInput($event.target.files)">
-      <button class="btn btn-default btn-lg" (click)="Image.click();">Select File</button>&nbsp;&nbsp;&nbsp;&nbsp;
-      <button type="button" class="btn btn-default btn-lg" [routerLink]="['/forecast']">Go to</button>
+      <img [src]="imageUrl" class="imgBorder" style=" width: 35rem; height: 45rem;">
+      <br><br><br>
+      <!-- start btn -->
+      <input type="file" #Image accept=".png, .jpg, .jpeg" style="display: none;"
+        (change)="handleFileInput($event.target.files)">
+      <button class="btn btn-default btn-lg" (click)="Image.click();">Select File</button>
 
+      <button type="button" style="margin-left: 2rem" class="btn btn-default btn-lg" (click)="newMessage()"
+        [routerLink]="['/forecast']" [disabled]="buttonDisabled">Go to</button>
+      <!-- end btn -->
     </div>
-    <!-- <div class="col-lg-8 col-md-8 col-sm-8 font-fam2 text-break">
-      <p style="text-decoration: underline; margin-top: 80px;">ข้อแนะนำ</p>
-      <p style="text-indent: 50px; font-size: 40px; ">ควรใช้รูปที่มีใบหน้าตรง ไม่มีสิ่งบดบังใบหน้า
-        เพื่อเพิ่มประสิทธิภาพในการพยากรณ์ค่า BMI</p>
-      <p style="font-size: 40px; ">จากโครงหน้าของผู้ใช้</p>
+    <div class="col-lg-8 col-md-8 col-sm-8 font-fam2 text-break">
+      <p style="text-decoration: underline; margin-top: 120px;">ข้อแนะนำ</p>
+      <p style="text-indent: 50px; font-size: 30px; ">ควรใช้รูปที่มีใบหน้าตรง ไม่มีสิ่งบดบังใบหน้า
+        เพื่อเพิ่มประสิทธิภาพในการพยากรณ์ค่า BMI จากโครงหน้าของผู้ใช้</p>
 
       <div class="text-center">
         <img src="assets/img2/do not use.png" style="width: 900px;">
       </div>
-    </div> -->
+    </div>
 
     <div class="col-lg-8 col-md-8 col-sm-8 font-fam2 text-break">
 

@@ -6,16 +6,20 @@ import { UploadService } from './upload.service';
   styleUrls: ['./upload-pic.component.scss']
 })
 export class UploadPicComponent implements OnInit {
-  imageUrl: string = 'http://placehold.it/800';
-  // imageUrl : string = "/assets/img/man-icon.png"
-  imageSend:string;
+  imageUrl: string = 'https://via.placeholder.com/900x1000?text=select+your+photo';
+  imageSend:string = null;
   fileToUpload : File = null;
-
   message:string;
+
+  //test
+  //count: number = 0;
+  buttonDisabled: boolean = true;
+  //end
 
   constructor(private data: UploadService) { }
 
   ngOnInit() {
+    // console.log('string check',this.imageSend);
     this.data.currentMessage.subscribe(message => this.message = message)
   }
 
@@ -27,6 +31,7 @@ export class UploadPicComponent implements OnInit {
     reader.onload = (event:any) => {
       this.imageUrl = event.target.result;
       this.imageSend = event.target.result;
+      this.buttonDisabled = false;
       console.log('gi',this.imageSend);
     }
     reader.readAsDataURL(this.fileToUpload);
