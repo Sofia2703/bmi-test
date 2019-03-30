@@ -33,6 +33,7 @@ export class UploadPicComponent implements OnInit {
       this.imageSend = event.target.result;
       this.buttonDisabled = false;
       console.log('gi',this.imageSend);
+      console.log('btn',this.buttonDisabled);
     }
     reader.readAsDataURL(this.fileToUpload);
   }
