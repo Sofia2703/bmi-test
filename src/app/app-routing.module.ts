@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'forecast' , component: ForecastComponent},
   { path: 'what-bmi' , component: WhatBmiComponent},
   { path: 'healthy' , component: HealthyComponent},
-  { path: 'contact' , component: ContactComponent},
+  { path: 'contact' , component: ContactComponent}
 ];
 
 @NgModule({
