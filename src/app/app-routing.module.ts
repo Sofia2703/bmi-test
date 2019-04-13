@@ -4,7 +4,6 @@ import { MainComponent } from './main/main.component';
 import { UploadPicComponent } from './upload-pic/upload-pic.component';
 import { ForecastComponent } from './forecast/forecast.component';
 import { WhatBmiComponent } from './what-bmi/what-bmi.component';
-import { ContactComponent } from './contact/contact.component';
 import { HealthyComponent } from './healthy/healthy.component';
 
 const routes: Routes = [
@@ -12,8 +11,7 @@ const routes: Routes = [
   { path: 'upload-pic' , component: UploadPicComponent},
   { path: 'forecast' , component: ForecastComponent},
   { path: 'what-bmi' , component: WhatBmiComponent},
-  { path: 'healthy' , component: HealthyComponent},
-  { path: 'contact' , component: ContactComponent}
+  { path: 'healthy' , component: HealthyComponent}
 ];
 
 @NgModule({
