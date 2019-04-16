@@ -5,85 +5,51 @@
         <div class="font-fam">
           <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
             <li class="nav-item">
-              <a href="#lorem" class="nav-link active" data-toggle="tab" role="tab" aria-controls="lorem">ผลการทำนาย
+              <a href="#result" class="nav-link active" data-toggle="tab" role="tab" aria-controls="result">ผลการทำนาย
                 BMI</a>
             </li>
             <li class="nav-item">
-              <a href="#ipsum" class="nav-link" data-toggle="tab" role="tab"
-                aria-controls="ipsum">คำแนะนำการออกกำลังกาย</a>
+              <a href="#excercise" class="nav-link" data-toggle="tab" role="tab"
+                aria-controls="excercise">คำแนะนำการออกกำลังกาย</a>
             </li>
             <li class="nav-item">
-              <a href="#dolor" class="nav-link" data-toggle="tab" role="tab"
-                aria-controls="dolor">คำแนะนำการรับประทานอาหาร</a>
+              <a href="#eat" class="nav-link" data-toggle="tab" role="tab"
+                aria-controls="eat">คำแนะนำการรับประทานอาหาร</a>
             </li>
 
           </ul>
         </div>
         <div class="tab-content text-left font-fam2">
-          <div class="tab-pane fade show contentData active" id="lorem" role="tabpanel">
-            <h1>Lorem</h1>
+          <div class="tab-pane fade show contentData active" id="result" role="tabpanel" [style.overflow]="'auto'" [style.height.px]="550">
+            <h1>ผลการทำนาย</h1>
 
-            <p>Aenean sed lacus id mi scelerisque tristique. Nunc sed ex sed turpis fringilla aliquet in in neque.
-              Praesent
-              posuere, neque rhoncus sollicitudin fermentum, erat ligula volutpat dui, nec dapibus ligula lorem ac
-              mauris.
-              Etiam et leo venenatis purus pharetra dictum.</p>
-
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin
-              tempor mi
-              ut risus laoreet molestie. Duis augue risus, fringilla et nibh ac, convallis cursus purus. Suspendisse
-              potenti.
-              Praesent pretium eros eleifend posuere facilisis. Proin ut magna vitae nulla suscipit eleifend. Ut
-              bibendum
-              pulvinar sapien, vel tristique felis scelerisque et. Sed elementum sapien magna, placerat interdum lacus
-              placerat ut. Integer varius, ligula bibendum laoreet sollicitudin, eros metus fringilla lectus, quis
-              consequat
-              nisl nibh ut nisi. Aenean dignissim, nibh ac fermentum condimentum, ante nisl rutrum sapien, at commodo
-              eros
-              sapien vulputate arcu. Fusce neque leo, blandit nec lectus eu, vestibulum commodo tellus. Aliquam sem
-              libero,
-              tristique at condimentum ac, luctus nec nulla.</p>
+            <p>เกณฑ์น้ำหนังปกติ คือ น้ำหนักที่เหมาะสมสำหรับคนไทยคือค่า BMI ระหว่าง 18.5-22.9 จัดอยู่ในเกณฑ์ปกติ ห่างไกลโรคที่เกิดจากความอ้วน และมีความเสี่ยงต่อการเกิดโรคต่าง ๆ น้อยที่สุด ควรพยายามรักษาระดับค่า BMI ให้อยู่ในระดับนี้ให้นานที่สุด</p>
 
           </div>
-          <div class="tab-pane fade contentData" id="ipsum" role="tabpanel">
-            <h1>Ipsum</h1>
+          <div class="tab-pane fade contentData" id="excercise" role="tabpanel" [style.overflow]="'auto'" [style.height.px]="550">
+            <h1>คำแนะนำการออกกำลังกาย</h1>
 
-            <p>Aenean pharetra risus quis placerat euismod. Praesent mattis lorem eget massa euismod sollicitudin.
-              Donec
-              porta
-              nulla ut blandit vehicula. Mauris sagittis lorem nec mauris placerat, et molestie elit vehicula. Donec
-              libero
-              ex, condimentum et mi dapibus, euismod ornare ligula.</p>
-
-            <p>In faucibus tempus ante, et tempor magna luctus id. Ut a maximus ipsum. Duis eu velit nec libero
-              pretium
-              pellentesque. Maecenas auctor hendrerit pulvinar. Donec sed tortor interdum, sodales elit vel, tempor
-              turpis. In
-              tristique vestibulum eros vel congue. Vivamus maximus posuere fringilla. Nullam in est commodo,
-              tristique
-              ligula
-              eu, tincidunt enim. Duis iaculis sodales lectus vitae cursus.</p>
+            <p>เกณฑ์ ปกติจะสามารถออกกำลังกายได้หลากหลายรูปแบบ
+              การออกกำลังกายนั้น กำลังเป็นกระแสนิยมอย่างมากในปัจจุบัน แต่ใครจะทราบว่าการออกกำลังกายนั้นก็แบ่งออกเป็นหลายชนิดและแต่ละชนิดก็ยังส่งผลดีต่อร่างกายของเราแต่ต่างกันออกไปดังนั้นการศึกษาวิธีต่างในการออกกำลังกายแต่ละประเภท เพื่อให้ร่างกายเรานั้นพัฒนาดีขึ้นไปในทิศทางที่และเป็นไปอย่างถูกวิธี
+              Cardiovascular
+              ประเภทแรกเป็นที่รู้จักกันดีอยู่แล้ว เรียกกันทั่วไป ว่าการคาร์ดิโอ เป็นการออกกำลังที่มีจุดประสงค์เพื่อการพัฒนาของระบบการสูบฉีดเลือด และระบบหายใจให้ดีขึ้น อธิบายง่ายคือทำให้เราสามารถหายใจได้เป็นปกติ ในเวลาที่ร่างกายเรานั้นทำงานหนักกว่าปกติ 
+              เช่นการเดินขึ้นบันได หรือการวิ่ง บางครั้งการออกกำลังกายประเภทนี้ถูกเรียกว่าแอโรบิก การออกกำลังกายประเภทนี้ต้องให้ร่างกายเคลื่อนไหวอย่างต่อเนื่อง เป็นระยะเวลาอย่างน้อย 30 นาที ตัวอย่างการออกกำลังกายประเภทนี้ เช่น การวิ่ง ปั่นจักรยาน หรือว่ายน้ำ เป็นต้น 
+              การออกกำลังกายประเภทนี้ ต้องมีการใช้กล้ามเนื้อพอสมควร และมีระยะเวลาที่นานพอสมควร ให้หัวใจ และปอดได้ทำงาน หากใครที่ไม่สามารถออกกำลังกายได้อย่างเต็มที่ การเดินเร็วในสวนสาธารณก็ถือว่าทดแทนได้ นอกจากนี้การออกกำลังกายในรูปแบบนี้ ยังช่วยเผาผลาญพลังงานออกจากร่างกายเรา ใครที่ต้องการจะลดน้ำหนักจึงต้องออกกำลังกายประเภทนี้เป็นหลัก
+              Body composition
+              การออกกำลังกายกระชับสัดส่วนเพื่อให้ร่างกายบางส่วนใหญ่ขึ้นหรือเล็กลงตามที่เราต้องการ ส่วนใหญ่จะออกกำลังกายโดยใช้เครื่องเป็นหลักแต่การจะให้ผลได้ดีนั้นเราควรศึกษาวิธี หรือท่าทางที่เหมาะสมกับร่างกายของเราเพราะเครื่องออกกำลังกายชนิดเดียวกันบางครั้งให้ผลลัพธ์แต่ละคนไม่เหมือนกัน 
+              การออกกำลังกายชนิดนี้เน้นการเพิ่มกล้ามเนื้อและลดไขมันเป็นหลัก บางครั้งคำนี้ก็หมายความว่าการตรวจวัดองค์ประกอบของร่างกาย การออกกำลังกายชนิดนี้จะช่วยให้รูปร่างของเราดีขึ้นนั่นเอง
+              Mascular Endurance
+              การออกกำลังเพื่อเพิ่มความทนทานให้กับกล้ามเนื้อ อธิบายง่ายๆคือทำให้เราออกกำลังกายหรือยกของหนักได้โดยไม่มีอาการเมื่อย ตัวอย่างการออกกำลังกายประเภทนี้ เช่นการปั่นจักรยานแบบเพิ่มแรงต้าน การยกน้ำหนัก การออกกำลังประเภทนี้ที่หลักการที่สำคัญที่สุดคือ การสร้างแรงต้านให้กับกล้ามเนื้อไม่จำเป็นต้องใช้อุปกรณ์ก็ได้ เช่นการ Body weight
+              Muscle strength
+              การออกกำลังกายที่เน้นเสริมสร้างกำลังและความแข็งแรงให้กับกล้ามเนื้อ อธิบายอีกอย่างคือทำให้เรานั้นสามารถใช้กล้ามเนื้อได้อย่างเต็มที่ เพิ่มความว่องวัยให้กับร่างกาย การออกกำลังกายประเภทนี้มักจะใช้สำหรับผู้ที่เป็นนักกีฬาเสียเป็นส่วนมากการออกกำลังกายประเภทนี้บางครั้งถูกเรียกว่าแอนแอโรบิก ตัวอย่างเช่นการวิ่งระยะสั้นด้วยความเร็วสูง การฝึกของนักกีฬาประเภทต่างๆเช่น การวิ่งตามกรวยของนักเป็นต้น
+              Flexibility
+              การออกกำลังกายประเภทนี้ เน้นไปที่การเพิ่มความยืดหยุ่นให้กับร่างกาย ที่เป็นที่นิยมกันมากก็คือโยคะนอกจากนี้การออกกำลังกายประเภทนี้ยังใช้ในการแก้ปัญหาออกการปวดที่เกิดจากการนั่งทำงานนานๆ การออกกำลังรูปแบบนี้เน้นไปที่การผ่อนคลายกล้ามเนื้อในส่วนที่ใช้งานมากทั้งวัน การออกกำลังกายประเภทนี้ควรกระทำอย่างระมัดระวังเพราะจะมีการใช้ข้อต่อค่อนข้างเยอะควรมีการศึกษาข้อมูลมาเป็นอย่างดีหรือควรอยู่ในการดูแลของผู้เชี่ยวชาญ</p>
           </div>
-          <div class="tab-pane fade contentData" id="dolor" role="tabpanel">
-            <h1>Dolor</h1>
+          <div class="tab-pane fade contentData" id="eat" role="tabpanel" [style.overflow]="'auto'" [style.height.px]="550">
+            <h1>คำแนะนำการรับประทานอาหาร</h1>
 
-            <p>Ut eget lectus tristique, tempus purus sit amet, porta augue. Mauris lobortis sem nec augue ultricies
-              blandit.
-              Nullam sed sem venenatis, pretium urna eget, scelerisque dolor. Morbi nec volutpat leo, quis faucibus
-              tortor.
-              Aenean vel rutrum mauris. Pellentesque lectus massa, tincidunt quis leo non, sodales sagittis nulla.
-              Proin
-              interdum est at nulla laoreet, pulvinar pretium nisl rutrum. In vel elit a risus rhoncus accumsan
-              vulputate non
-              sapien. Sed et rhoncus velit. Nunc commodo augue fermentum, hendrerit neque at, ullamcorper arcu. Nulla
-              tincidunt orci a lectus efficitur elementum. Donec molestie urna vestibulum augue placerat faucibus. In
-              vitae
-              orci vel mauris cursus viverra ac sit amet nisl. Phasellus odio tortor, ullamcorper eget ullamcorper
-              eget,
-              molestie eget justo. Integer elementum purus eget arcu fermentum tincidunt. Nullam erat tellus, dictum
-              sit
-              amet
-              nisi eu, rutrum fermentum odio.</p>
+            <p>กินอาหารหลัก 5 หมู่ให้ครบ ได้แก่ อาหารพวกเนื้อสัตว์ ไข่ นม และถั่วเมล็ดแห้ง อาหารประเภทนี้จะให้โปรตีน ไขมัน วิตามิน และเกลือแร่ อาหารพวกข้าว เผือก มัน และน้ำตาล ให้กำลังงาน และโปรตีน แต่ปริมาณ และคุณภาพของโปรตีนด้อยกว่าพวกเนื้อสัตว์ เฉพาะน้ำตาลให้แต่กำลังงานอย่างเดียวผัก และผลไม้ให้วิตามิน และเกลือแร่หลายชนิดตลอดจนใยอาหารด้วย ส่วนไขมัน เป็นแหล่งอาหารที่ให้กำลังงานที่ดี และน้ำมันพืชบางชนิดให้กรดไลโนเลอิกด้วย ในแต่ละวันถ้ากินอาหารทั้ง 5 หมู่ 
+              ให้ครบถ้วนโอกาสที่จะขาดสารอาหารย่อมเป็นไปได้ยาก และไม่ต้องไปหายาบำรุงมากินให้เสียเงิน  กินอาหารแต่ละหมู่ให้หลากหลาย เพื่อให้ร่างกายรับสารอาหารต่างๆ ครบในปริมาณที่เพียงพอกับความต้องการ ถ้ากินอาหารไม่ครบทั้ง 5 หมู่ หรือกินอาหารซ้ำซากเพียงบางชนิดทุกวันอาจทำให้ได้รับสารอาหารบางประเภทไม่เพียงพอหรือมากเกินไป หมั่นดูแลน้ำหนักตัว น้ำหนักตัวเป็นเครื่องบ่งชี้สำคัญที่บอกถึงภาวะสุขภาพ แต่ละคนจะต้องมีน้ำหนักที่เหมาะสมตามวัย และได้สัดส่วนกับความสูงของตนเอง</p>
           </div>
 
         </div>
@@ -91,7 +57,7 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 text-center top">
       <img [src]="imageSend" class="imgBorder" style="width: 35rem; height: 45rem; margin-top: 3rem;">
-      <h1 style="font-size: 60px; font-weight: bolder; color: white;">Hello world</h1>
+      <h1 style="font-size: 60px; font-weight: bolder; color: white;">อยู่ในเกณฑ์ : ปกติ</h1>
       <br>
       <!-- div share -->
       <div>
