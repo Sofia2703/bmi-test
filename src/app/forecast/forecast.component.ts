@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UploadService } from '../upload-pic/upload.service';
+import { BmiService } from '../bmi.service';
 
 @Component({
   selector: 'app-forecast',
@@ -11,10 +12,22 @@ export class ForecastComponent implements OnInit {
   imageUrl: string = 'http://placehold.it/800';
   imageSend: string;
 
-  constructor(private data: UploadService) { }
+  public getdata = [];
+
+  constructor(private data: UploadService, 
+    private bmiService: BmiService) { }
 
   ngOnInit() {
     this.data.currentMessage.subscribe(imageSend => this.imageSend = imageSend)
+
+    // python
+    this.bmiService.getEmployess()
+      .subscribe(data => {
+        this.getdata.push(data);
+        console.log('dta', data);
+      });
+
+      console.log('dta2', this.getdata);
   }
 
 
