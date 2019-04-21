@@ -12,22 +12,18 @@ export class ForecastComponent implements OnInit {
   imageUrl: string = 'http://placehold.it/800';
   imageSend: string;
 
-  public getdata = [];
+  public text: string;
 
   constructor(private data: UploadService, 
     private bmiService: BmiService) { }
 
   ngOnInit() {
+    //pic
     this.data.currentMessage.subscribe(imageSend => this.imageSend = imageSend)
 
-    // python
-    this.bmiService.getEmployess()
-      .subscribe(data => {
-        this.getdata.push(data);
-        console.log('dta', data);
-      });
+    //text
+    this.data.currentMessageText.subscribe(text => this.text = text)
 
-      console.log('dta2', this.getdata);
   }
 
 
