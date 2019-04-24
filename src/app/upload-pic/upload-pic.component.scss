@@ -46,7 +46,6 @@
 }
 
 
-
 // -------------- btn -----------
 .btn-default {
   font-family: TH SarabunPSK;
@@ -71,4 +70,13 @@
 // ----------- img border -------------
 .imgBorder {
   border: 5px solid white;
+  border-radius: 4px;
+  width: 400px;
+}
+.pic-up{
+  // background-repeat: repeat-x;
+  // background-size: 100% 100%;
+  // background-attachment: fixed;
+  border: 1px solid #ddd;
+  
 }

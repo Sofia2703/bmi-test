@@ -9,7 +9,7 @@ import { BmiService } from '../bmi.service';
   styleUrls: ['./upload-pic.component.scss']
 })
 export class UploadPicComponent implements OnInit {
-  imageUrl: string = 'https://via.placeholder.com/900x1000?text=select+your+photo';
+  imageUrl: string = 'https://via.placeholder.com/400x500?text=select+your+photo';
   imageSend: string = null;
   fileToUpload: File = null;
   message: string;
