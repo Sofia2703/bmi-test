@@ -8,7 +8,7 @@ import { IBmi } from './IBmi';
 })
 export class BmiService {
 
-  private _url: string = "http://127.0.0.1:5000/forecast";
+  private _url: string = "http://10.10.100.69:5000/forecast";
 
   constructor(private http: HttpClient) { }
 
