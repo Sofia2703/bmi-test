@@ -15,7 +15,7 @@ export class UploadPicComponent implements OnInit {
   message: string;
   message2: string;
   public fileSent = [];
-  public text: string;
+  public text = [];
 
 
   showSecret: boolean = false;
@@ -38,7 +38,7 @@ export class UploadPicComponent implements OnInit {
       this.imageUrl = event.target.result;
       this.imageSend = event.target.result;
       this.buttonDisabled = false;
-      //console.log('gi', this.imageSend);
+      //console.log('imageSend', this.imageSend);
       //console.log('btn', this.buttonDisabled);
     }
     reader.readAsDataURL(this.fileToUpload);
@@ -49,13 +49,14 @@ export class UploadPicComponent implements OnInit {
     this.bmiService.Postdata(this.fileToUpload).subscribe(data => {
       console.log('done');
       this.fileSent.push(data);
-      this.text = this.fileSent[0].class;
+      this.text = this.fileSent[0];
       console.log('txt', this.text);
 
       //sent to service
       this.data.changeMessageText(this.text);
       this.router.navigate(['/forecast']);
     })
+
     //pic
     this.data.changeMessage(this.imageSend);
     // this.router.navigate(['/forecast']);
