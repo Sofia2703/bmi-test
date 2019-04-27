@@ -14,16 +14,15 @@ export class UploadPicComponent implements OnInit {
   fileToUpload: File = null;
   message: string;
   message2: string;
-
-  //test
   public fileSent = [];
   public text: string;
-  //end
-  
+
+
+  showSecret: boolean = false;
   buttonDisabled: boolean = true;
 
 
-  constructor(private data: UploadService,private router: Router, private bmiService: BmiService) { }
+  constructor(private data: UploadService, private router: Router, private bmiService: BmiService) { }
 
   ngOnInit() {
     // console.log('string check',this.imageSend);
@@ -46,7 +45,7 @@ export class UploadPicComponent implements OnInit {
   }
 
   newMessage() {
-
+    this.showSecret = true;
     this.bmiService.Postdata(this.fileToUpload).subscribe(data => {
       console.log('done');
       this.fileSent.push(data);
@@ -60,9 +59,8 @@ export class UploadPicComponent implements OnInit {
     //pic
     this.data.changeMessage(this.imageSend);
     // this.router.navigate(['/forecast']);
-    
+
   }
 
-  
 
 }

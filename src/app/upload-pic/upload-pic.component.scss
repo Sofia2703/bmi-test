@@ -28,21 +28,31 @@
 }
 
 .top {
-  margin-top: 12rem;
+  margin-top: 5rem;
 }
 
 .font-fam {
   font-family: TH SarabunPSK;
-  font-size: 120px;
+  font-size: 50px;
   font-weight: bold;
   color: white;
 }
 
 .font-fam2 {
   font-family: TH SarabunPSK;
-  font-size: 50px;
-  font-weight: bolder;
-  color: white;
+  font-size: 20px;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 13px 15px 36px -26px rgba(0,0,0,0.83);
+-moz-box-shadow: 13px 15px 36px -26px rgba(0,0,0,0.83);
+box-shadow: 13px 15px 36px -26px rgba(0,0,0,0.83);
+}
+
+.po-spin{
+  width:200px;
+  height:200px;
+  margin-top: 160px;
 }
 
 
@@ -64,14 +74,17 @@
 .btn-default:hover {
   color: #FFF;
   background:#32c5d2;
-  border: 2px solid #32c5d2;
+  border: 2px solid #bdd7da;
 }
+
 
 // ----------- img border -------------
 .imgBorder {
   border: 5px solid white;
   border-radius: 4px;
   width: 400px;
+  //width: 23%;
+  position: relative;
 }
 .pic-up{
   // background-repeat: repeat-x;

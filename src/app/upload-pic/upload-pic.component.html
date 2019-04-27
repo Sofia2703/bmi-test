@@ -1,32 +1,69 @@
 <div class="container-fluid">
   <div class="row set-margin">
-    <!-- test -->
-    <hr>
-    <!-- end -->
 
-    <div class="col-lg-1">
-
+    <div class="col-lg-12 col-md-12 col-sm-12 text-center top ">
+      <p class="font-fam" style="margin-left: 8%;">Upload your Picture
+        <a data-toggle="tooltip" title="Help">
+          <button type="button" class="btn btn-default" style="margin-left: 5%;" data-toggle="modal"
+            data-target="#myModal"><i class="fa fa-question" style="font-size: 20px;" aria-hidden="true"></i>
+          </button>
+        </a>
+      </p>
+      <img [src]="imageUrl" class="imgBorder set-margin" alt="select image">
     </div>
-    <div class="col-lg-3 col-md-3 col-sm-3 text-center top">
-      <img [src]="imageUrl" class="imgBorder"  alt="select image">
-      <!-- style=" width: 35rem; height: 45rem;" -->
-      <br><br><br>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 text-center" style="margin-top:1%;">
       <!-- start btn -->
-      <input type="file" #Image accept="image/*" style=" display: none;" (change)="handleFileInput($event.target.files)">
+      <input type="file" #Image accept="image/*" style=" display: none;"
+        (change)="handleFileInput($event.target.files)">
       <button class="btn btn-default btn-lg" (click)="Image.click();">Select File</button>
 
-      <button type="button" style="margin-left: 2rem" class="btn btn-default btn-lg" (click)="newMessage()"
-       [disabled]="buttonDisabled">Go to</button>
-      <!-- end btn -->
-    </div>
-    <div class="col-lg-8 col-md-8 col-sm-8 font-fam2 text-break">
-      <p style="text-decoration: underline; margin-top: 120px;">ข้อแนะนำ</p>
-      <p style="text-indent: 50px; font-size: 30px; ">ควรใช้รูปที่มีบุคคลเดียว มีใบหน้าตรง ไม่มีสิ่งบดบังใบหน้า
-        เพื่อเพิ่มประสิทธิภาพในการพยากรณ์ค่า BMI จากโครงหน้าของผู้ใช้</p>
+      <!-- <button type="button" style="margin-left: 2rem" class="btn btn-default btn-lg" (click)="test()">Go to</button> -->
 
-      <div class="text-center">
-        <img src="assets/img2/do not use.png" style="width: 900px;" alt="Picture u should to select">
+      <button type="button" style="margin-left: 2rem" class="btn btn-default btn-lg" (click)="newMessage()"
+        [disabled]="buttonDisabled">Go to</button>
+
+      <!-- end btn -->
+
+      <!-- The Modal 1 -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg" style="margin-top:17%;">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h1 class="modal-title" style="text-decoration: underline; padding-left: 30px; padding-top: 30px;">
+                ข้อแนะนำ</h1>
+
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <p style="font-size: 30px; padding: 30px;">ควรใช้รูปที่มีบุคคลเดียว มีใบหน้าตรง ไม่มีสิ่งบดบังใบหน้า
+                เพื่อเพิ่มประสิทธิภาพในการพยากรณ์ค่า BMI จากโครงหน้าของผู้ใช้</p>
+
+              <div class="text-center set-margin">
+                <img src="assets/img2/do not use.png" style="width: 90%;" alt="Picture u should to select">
+              </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- wait panel -->
+    <div *ngIf="showSecret" class="col-lg-7 col-md-7 col-sm-12 set-margin" style="margin-top:-650px;">
+      <div class="jumbotron box-shadow" style="height: 70rem;">
+        <div class="spinner-border text-info po-spin mx-auto d-block"></div>
+        <p class="text-center font-fam" style="margin-top: 40px;color: black;">กรุณารอสักครู่....</p>
+      </div>
+    </div>
+    <!-- end wait -->
+
   </div>
 </div>
