@@ -12,7 +12,7 @@ export class ForecastComponent implements OnInit {
   imageUrl: string = 'https://via.placeholder.com/400x500?text=this+your+photo';
   imageSend: string;
 
-  public text: string;
+  public text=[];
 
   constructor(private data: UploadService, 
     private bmiService: BmiService) { }
@@ -22,7 +22,8 @@ export class ForecastComponent implements OnInit {
     this.data.currentMessage.subscribe(imageSend => this.imageSend = imageSend)
 
     //text
-    this.data.currentMessageText.subscribe(text => this.text = text)
+    this.data.currentMessageText.subscribe(text => this.text[0] = text)
+    console.log('text in forecast',this.text)
 
   }
 

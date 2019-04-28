@@ -20,7 +20,7 @@ export class UploadService {
   }
 
   //Text
-  changeMessageText(text: string) {
+  changeMessageText(text: any) {
     this.messageSourceText.next(text)
     console.log('list service', text)
   }

@@ -4,21 +4,41 @@
 }
 
 .font-fam {
-  font-family: TH SarabunPSK;
-  font-size: 25px;
-  font-weight: bold;
-  color: white;
+  font-size: 22px;
+	color: white;
+
 }
 
 .font-fam2 {
-  font-family: TH SarabunPSK;
+  font-size: 20px;
+  //color: white;
+}
+
+.font-fam3 {
   font-size: 30px;
-  font-weight: bolder;
-  color: white;
+//	color: white;
+margin-left: 12px;
+}
+
+.font-fam4 {
+	font-size: 40px;  
+	color: white;
 }
 
 .top {
-  margin-top: 5rem;
+  margin-top: 8rem;
+}
+
+.content-text{
+	width: 900px;
+  height: 550px;
+	margin-right: 5px;
+	margin-left: 10px;
+	
+}
+
+.scroll{
+overflow-y: auto;
 }
 
 .imgBorder {
@@ -27,19 +47,26 @@
   width: 400px;
 }
 
+.bg {
+	background-color:rgba(255, 255, 255, 0.6);
+	border-radius: 4px;
+}
+
 // -------
 //Bootstrap 4 Vertical Tabs
-$padding-base: 50px;
+$padding-base: 20px;
 $color-body: #fff;
 $color-border: #ddd;
 $color-link: #0275d8;
 $border-radius: 1rem;
 
 .contentData {
-  margin-top : 6rem;
-  // margin-right: 70rem;
+	margin : 2rem;
+	margin-right: 0rem;
+	
 }
 .nav-tabs {
+	//width:300px;
 	&--vertical {
 		border-bottom: none;
 		border-right: 1px solid $color-border;
@@ -77,24 +104,4 @@ $border-radius: 1rem;
 			}
 		}
   }
-}
- //scoll bar test
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
 }
