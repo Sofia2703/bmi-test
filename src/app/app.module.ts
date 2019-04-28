@@ -13,7 +13,7 @@ import {DemoMaterialModule} from './demo-material';
 import { AgGridModule } from 'ag-grid-angular';
 import { WhatBmiComponent } from './what-bmi/what-bmi.component';
 import { HealthyComponent } from './healthy/healthy.component';
-
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -32,6 +32,7 @@ import { HealthyComponent } from './healthy/healthy.component';
     ReactiveFormsModule,
     FormsModule,
     AgGridModule.withComponents(null),
+    AngularFontAwesomeModule
     
   ],
   providers: [],

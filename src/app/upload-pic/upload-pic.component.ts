@@ -45,7 +45,10 @@ export class UploadPicComponent implements OnInit {
   }
 
   newMessage() {
+    console.log('done' ,this.showSecret);
     this.showSecret = true;
+    console.log('done2',this.showSecret);
+
     this.bmiService.Postdata(this.fileToUpload).subscribe(data => {
       console.log('done');
       this.fileSent.push(data);
@@ -58,8 +61,8 @@ export class UploadPicComponent implements OnInit {
     })
 
     //pic
-    this.data.changeMessage(this.imageSend);
-    // this.router.navigate(['/forecast']);
+   this.data.changeMessage(this.imageSend);
+   // this.router.navigate(['/forecast']);
 
   }
 
