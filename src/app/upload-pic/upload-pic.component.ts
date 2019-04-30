@@ -62,7 +62,7 @@ export class UploadPicComponent implements OnInit {
 
     //pic
    this.data.changeMessage(this.imageSend);
-   // this.router.navigate(['/forecast']);
+   //this.router.navigate(['/forecast']);
 
   }
 
