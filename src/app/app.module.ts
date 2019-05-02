@@ -14,13 +14,15 @@ import { AgGridModule } from 'ag-grid-angular';
 import { WhatBmiComponent } from './what-bmi/what-bmi.component';
 import { HealthyComponent } from './healthy/healthy.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     WhatBmiComponent,
-    HealthyComponent
+    HealthyComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

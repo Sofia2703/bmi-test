@@ -45,24 +45,24 @@ export class UploadPicComponent implements OnInit {
   }
 
   newMessage() {
-    console.log('done' ,this.showSecret);
+    console.log('done', this.showSecret);
     this.showSecret = true;
-    console.log('done2',this.showSecret);
+    console.log('done2', this.showSecret);
 
-    this.bmiService.Postdata(this.fileToUpload).subscribe(data => {
-      console.log('done');
-      this.fileSent.push(data);
-      this.text = this.fileSent[0];
-      console.log('txt', this.text);
+    // this.bmiService.Postdata(this.fileToUpload).subscribe(data => {
+    //   console.log('done');
+    //   this.fileSent.push(data);
+    //   this.text = this.fileSent[0];
+    //   console.log('txt', this.text);
 
-      //sent to service
-      this.data.changeMessageText(this.text);
-      this.router.navigate(['/forecast']);
-    })
+    //   //sent to service
+    //   this.data.changeMessageText(this.text);
+    //   this.router.navigate(['/forecast']);
+    //})
 
     //pic
-   this.data.changeMessage(this.imageSend);
-   //this.router.navigate(['/forecast']);
+    this.data.changeMessage(this.imageSend);
+    this.router.navigate(['/forecast']);
 
   }
 
