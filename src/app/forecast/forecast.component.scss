@@ -1,50 +1,16 @@
-.set-margin {
-  margin-left: auto;
-  margin-right: auto;
+.border {
+	border: 3px;
+	border-color: azure;
 }
 
-.font-fam {
-  font-size: 22px;
+.distance{
+	margin-top: 40px;
+ 	padding: 0px;
+}
+
+.font-1{
 	color: white;
-
-}
-
-.font-fam2 {
-  font-size: 20px;
-  //color: white;
-}
-
-.font-fam3 {
-  font-size: 30px;
-//	color: white;
-margin-left: 12px;
-}
-
-.font-fam4 {
-	font-size: 40px;  
-	color: white;
-}
-
-.top {
-  margin-top: 8rem;
-}
-
-.content-text{
-	width: 900px;
-  height: 550px;
-	margin-right: 5px;
-	margin-left: 10px;
-	
-}
-
-.scroll{
-overflow-y: auto;
-}
-
-.imgBorder {
-	border: 5px solid white;
-  border-radius: 4px;
-  width: 400px;
+	font-size: 20px;
 }
 
 .bg {
@@ -52,9 +18,19 @@ overflow-y: auto;
 	border-radius: 4px;
 }
 
-// -------
-//Bootstrap 4 Vertical Tabs
-$padding-base: 20px;
+.scroll{
+	overflow-y: auto;
+}
+
+.imgBorder {
+	border: 5px solid white;
+  border-radius: 4px;
+  width: 300px;
+}
+
+
+// ----- vertical tab -----
+$padding-base: 0px;
 $color-body: #fff;
 $color-border: #ddd;
 $color-link: #0275d8;
@@ -65,11 +41,21 @@ $border-radius: 1rem;
 	margin-right: 0rem;
 	
 }
+
+.tab-content{
+	width: 75%;
+	height: 500px;
+	padding: 30px;
+	//padding-top: 0px;
+	overflow-y: auto;
+}
+
+// -------------------vertical tap----------------------
 .nav-tabs {
 	//width:300px;
 	&--vertical {
 		border-bottom: none;
-		border-right: 1px solid $color-border;
+		border-right: 5px double $color-border;
 		display: flex; //*
 		flex-flow: column nowrap; //**
 	} //* ** คือการจัดแนวของ tabs
@@ -104,11 +90,4 @@ $border-radius: 1rem;
 			}
 		}
   }
-}
-
-// --------------------------------------------------------------------------------------------------------
-.row::after {
-  content: "";
-  clear: both;
-  display: block;
 }

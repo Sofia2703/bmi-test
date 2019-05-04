@@ -9,7 +9,7 @@ import { BmiService } from '../bmi.service';
 })
 export class ForecastComponent implements OnInit {
   // showFiller = false;
-  imageUrl: string = 'https://via.placeholder.com/400x500?text=this+your+photo';
+  imageUrl: string = 'https://via.placeholder.com/300x400?text=this+your+photo';
   imageSend: string;
 
   public text=[];
